@@ -8,8 +8,10 @@ public class Main {
         // Now we just ask the object to do the work
         double tax = myInvoice.calculateTax();
         double discount = myInvoice.getDiscount();
+        double totalAmount = myInvoice.getTotalAmount();
 
         System.out.println("Tax: R" + tax);
         System.out.println("Discount: R" + discount);
+        System.out.println("Total Amount: R" + totalAmount);
     }
 }

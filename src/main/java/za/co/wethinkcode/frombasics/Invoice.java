@@ -23,4 +23,9 @@ public class Invoice {
             return 0.0;
         }
     }
+
+    public double getTotalAmount() {
+        double totalAmount = price + calculateTax() - getDiscount();
+        return totalAmount;
+    }
 }

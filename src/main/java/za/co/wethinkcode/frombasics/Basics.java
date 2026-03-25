@@ -34,27 +34,4 @@ public class Basics {
     }
 
 
-
-    // --- THE RECIPES (Methods) ---
-
-    public static String checkPower(int level) {
-        // Logic fix: If level is LESS than 20, it's critical
-        if (level < 20) {
-            return "critical";
-        } else {
-            return "stable";
-        }
-    }
-
-    public static double calculateTax(double price) {
-        return price * 0.15; // 15% VAT calculation
-    }
-
-    public static double getDiscount(double totalAmount) {
-        if (totalAmount > 100) {
-            return 10.0;
-        } else {
-            return 0.0;
-        }
-    }
 }
